@@ -1,0 +1,26 @@
+.bg
+{
+  background-size: cover;
+  color: orangered;
+  opacity: 0.8;
+  font-weight: bolder;
+}
+#button1
+{
+    width: 30%;
+    padding: 5px;
+    font-size: 20px;
+}
+#camera
+{
+    height: 300;
+    width: 300;
+    border: 3px ridge orangered ;
+}
+#objects
+{
+    background-color: white;
+    padding: 8px;
+    border: 2px ridge orangered 50%;
+    width: 60%;
+}

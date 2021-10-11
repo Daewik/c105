@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Image Recognition</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js">
+        </script>
+    </head>
+    <body background="Eye image.jfif" class="bg">
+        <div class="container">
+        <center>
+            <h1 class="btn btn-light" id="button1">Image Recognizer</h1>
+            <h3>The image recognizer model is trained on following objects :- </h3>
+            <br>
+            <h4 id="objects">Spinner | Phone | Remote | Laptop | Mouse | Gun | Sanitizer | Pen | Money | Flower </h4>
+            <br>
+            <h4>Webcam View :- </h4>
+            <div id="camera"></div>
+            <br>
+            <div id="image"></div>
+            <br>
+            <button class="btn btn-primary" onclick="capture()">Capture Image</button>
+            <br> <br> 
+            <button class="btn btn-warning" onclick="identify()" id="button2">Identify Image</button>
+            <br> <br>
+            <label>Object : </label><span id="object_name"></span>
+            <br><br>
+            <label>Accuracy : </label><span id="accuracy"></span>
+        </center>
+        <script src="main.js"></script>
+    </div>
+    </body>
+</html>
